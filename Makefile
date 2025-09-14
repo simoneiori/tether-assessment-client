@@ -1,6 +1,6 @@
 PROJECT_ROOT = $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-OBJS = client.o jsmn.o
+OBJS = client.o json.o
 
 ifeq ($(BUILD_MODE),debug)
 	CFLAGS += -g -O0
